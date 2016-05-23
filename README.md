@@ -1,17 +1,17 @@
-# f
+# ojo
 
-Read our [documentation](http://apblog.uae.ucweb.local/team/%E5%B7%A5%E5%85%B7/%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/index.html) for more information.
+Read our [documentation](https://github.com/jasonChen1982/ojo) for more information.
 
 ## Install
 
 ```
-npm i -g git+ssh://git@git.ucweb.local:pffe/f.git
+npm i -g ojo
 ```
 
 ## Usage
 
 ```
-  Usage: f [options] [command]
+  Usage: ojo [options] [command]
 
 
   Commands:
