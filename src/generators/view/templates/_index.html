@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="http://www.ucweb.com/favicon.ico">
+    <title>view - <%= viewName %></title>
+    <link rel="stylesheet" href="<%= viewName %>.less">
+    <script src='../../bower_components/suitui/src/suitui.js?__inline'></script>
+    <script>
+        /**
+         *
+         * @obj opts
+         * @key VOH {String} 指明是以 width｜height 为基准，default 'width'
+         * @key DsgSize {Number} 传入设计稿的设计尺寸，传入值为VOH做指明属性的大小，default 640
+         * @key rem {Number} rem到px的兑换比例，为了方便可以设为100、1000、10000...(不要设为10) default 100
+         *
+         */
+        window.JC.UI.init();
+    </script>
+    <script src='../../bower_components/perf/src/perf.js?__inline'></script>
+    <script>window.UEM.perf.config({uaeId: 'TODO'});</script>
+</head>
+
+<body>
+    <!-- Components here -->
+    {{{unit name="cmpname"}}}
+    <!-- Components end -->
+    <script>
+    window.__data = __BACKEND_DATA__;
+    window.CONF = {};
+    window.MSG = {};
+    window.FILTER = {};
+    </script>
+    <script async src="<%= viewName %>.js"></script>
+</body>
+
+</html>

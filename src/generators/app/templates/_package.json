@@ -1,0 +1,46 @@
+{
+  "name": "<%= actName %>",
+  "version": "0.0.1",
+  "description": "UC Activity <%= actName %>",
+  "main": "server/app.js",
+  "i18n": {
+    "host": "http://babel.dev.uae.uc.cn/",
+    "actId": ""
+  },
+  "tinyimg": {
+    "apiKey": "Oj3e9V0pJymoyt1jY482tqd1J-73OqIc",
+    "summarize": true,
+    "summarizeOnError": false,
+    "showProgress": true,
+    "stopOnImageError": false,
+    "checkSigs": true,
+    "sigFile": "./tinyimg/imgmd5.json"
+  },
+  "private": true,
+  "scripts": {
+    "watch": "f w",
+    "start": "f s",
+    "release": "f r prod -cd ../",
+    "ci": "npm install --production && bower install && npm run release"
+  },
+  "keywords": [
+    "activity",
+    "<%= actName %>"
+  ],
+  "cdn": {
+    "disabled": false,
+    "address": {
+      "national":"http://image.uc.cn/s/uae/g/01",
+      "international": "http://img.ucweb.com/s/uae/g/01"
+    }
+  },
+  "author": {
+    "name": "<%= gitName %>",
+    "email": "<%= gitEmail %>"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
